@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <title>(బులి)సత్యనారాయణ గారి వంశవృక్షం</title>
+  <style>
+    body {
+      font-family: 'Noto Sans Telugu', sans-serif;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      margin-top: 20px;
+      font-size: 32px;
+      color: #2c3e50;
+    }
+    .tree-container {
+      position: relative;
+      margin-top: 30px;
+    }
+    .tree-image {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 12px;
+    }
+    .button-group {
+      margin-top: 20px;
+    }
+    button {
+      margin: 10px;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2ecc71;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #27ae60;
+    }
+    .file-content {
+      margin-top: 20px;
+      display: none;
+    }
+    .file-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>(బులి)సత్యనారాయణ గారి వంశవృక్షం</h1>
+
+  <div class="tree-container">
+    <img src="Images\PeethanisTree24.jpg" alt="(బులి)సత్యనారాయణ గారి వంశవృక్షం" class="tree-image">
+  </div>
+
+  <div class="button-group">
+  
+	<button onclick="location.href='PeethanisTree4.html'">Back</button>
+	
+	
+	
+  </div>
+
+  <!-- File sections -->
+  <div id="file1" class="file-content">File 1 content goes here...</div>
+  <div id="file2" class="file-content">File 2 content goes here...</div>
+  <div id="file3" class="file-content">File 3 content goes here...</div>
+  <div id="file4" class="file-content">File 4 content goes here...</div>
+  <div id="file5" class="file-content">File 5 content goes here...</div>
+
+  <script>
+    function showFile(fileId) {
+      const files = document.querySelectorAll('.file-content');
+      files.forEach(file => file.classList.remove('active'));
+
+      const selectedFile = document.getElementById(fileId);
+      if (selectedFile) {
+        selectedFile.classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+</html>
